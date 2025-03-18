@@ -63,7 +63,19 @@ public class Main {
                 }
             }
         }
+        System.out.println("Matrix with crosses marked:\n");
 
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < length; x++) {
+                System.out.print(display[y][x] + " ");
+            }
+            System.out.println();
+        }
 
+        System.out.println("\nCoordinates of cross centers (X, Y):");
+
+        for (String coord : crossCenters) {
+            System.out.println(coord);
+        }
     }
 }
